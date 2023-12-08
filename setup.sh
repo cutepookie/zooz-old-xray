@@ -74,7 +74,7 @@ mkdir -p /usr/local/etc/xray
 # Make Folder Config Logs
 mkdir -p /usr/local/etc/xray/configlogs
 
-#Download XRAY Core V1.8.6
+#Download XRAY Core V1.7.5
 wget -O /usr/local/bin/xray "https://github.com/cutepookie/zooz-old-xray/raw/main/BIN/xray"
 chmod +x /usr/local/bin/xray
 #Server Info
