@@ -43,7 +43,7 @@ res4() {
 
 clear
 echo -e "\e[36m\033[0m"
-echo -e " \E[0;41;36m           RESTART SERVICE SERVER           \E[0m"
+echo -e " \E[0;36m           RESTART SERVICE SERVER           \E[0m"
 echo -e "\e[36m\033[0m"
 echo -e ""
 echo -e "  \033[1;91m Service Restart Fail2ban\033[1;37m"

@@ -29,7 +29,7 @@ else
 fi
 
 # // script version
-myver="$(cat /home/ver)"
+#myver="$(cat /home/ver)"
 
 # // script version check
 serverV=$( curl -sS https://raw.githubusercontent.com/cutepookie/zooz-old-xray/main/UPDATE/version)
@@ -59,25 +59,26 @@ echo -e " Daily Data Usage   :  ${YB}$daily_usage${NC}"
 echo -e " Monthly Data Usage :  ${YB}$monthly_usage${NC}"
 echo -e ""
 echo -e ""
-echo -e " \E[0;41;36m                 XRAY MENU                  \E[0m"
+echo -e " \E[1;36m                 XRAY MENU                  \E[0m"
 echo -e "
- [\033[1;36m 1 \033[0m]  XRAY Vmess WS Panel
- [\033[1;36m 2 \033[0m]  XRAY Vless WS Panel
- [\033[1;36m 3 \033[0m]  XRAY Trojan WS Panel
- [\033[1;36m 4 \033[0m]  XRAY Vless TCP XTLS Panel
- [\033[1;36m 5 \033[0m]  XRAY Trojan TCP Panel
- [\033[1;36m 6 \033[0m]  DNS Changer
- [\033[1;36m 7 \033[0m]  Netflix Checker
- [\033[1;36m 8 \033[0m]  Limit Bandwith Speed
- [\033[1;36m 9 \033[0m]  Change Domain
- [\033[1;36m 10\033[0m]  Renew Certificate
- [\033[1;36m 11\033[0m]  Check VPN Status
- [\033[1;36m 12\033[0m]  Check VPN Port
- [\033[1;36m 13\033[0m]  Restart VPN Services
- [\033[1;36m 14\033[0m]  Speedtest VPS
- [\033[1;36m 15\033[0m]  Check RAM & CPU Usage
- [\033[1;36m 16\033[0m]  Reboot VPS
-"
+ \033[1;36m  1\033[0m  XRAY Vmess WS Panel
+ \033[1;36m  2\033[0m  XRAY Vless WS Panel
+ \033[1;36m  3\033[0m  XRAY Trojan WS Panel
+ \033[1;36m  4\033[0m  XRAY Vless TCP XTLS Panel
+ \033[1;36m  5\033[0m  XRAY Trojan TCP Panel
+ \033[1;36m  6\033[0m  DNS Changer
+ \033[1;36m  7\033[0m  Netflix Checker
+ \033[1;36m  8\033[0m  Limit Bandwith Speed
+ \033[1;36m  9\033[0m  Change Domain
+ \033[1;36m 10\033[0m  Renew Certificate
+ \033[1;36m 11\033[0m  Check VPN Status
+ \033[1;36m 12\033[0m  Check VPN Port
+ \033[1;36m 13\033[0m  Restart VPN Services
+ \033[1;36m 14\033[0m  Speedtest VPS
+ \033[1;36m 15\033[0m  Check RAM & CPU Usage
+ \033[1;36m 16\033[0m  Reboot VPS"
+echo ""
+echo ""
 echo -e " \033[1;37mType [ x ] To Exit From Menu \033[0m"
 echo -e ""
 read -p " Select Menu :  "  opt

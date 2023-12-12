@@ -100,7 +100,7 @@ echo ""
 }
 
 echo -e "\033[0;34m─────────────────────────────────────────\033[0m"
-echo -e "\E[0;41;36m              BACKUP & RESTORE           \E[0m"
+echo -e "\E[0;36m              BACKUP & RESTORE           \E[0m"
 echo -e "\033[0;34m─────────────────────────────────────────\033[0m"
 echo -e ""
 echo -e " [\e[36m 1 \e[0m] ${RED}• ${NC} Backup Data VPS"

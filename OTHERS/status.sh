@@ -8,7 +8,7 @@ NC='\e[0m'
 clear
 echo -e ""
 echo -e "\e[36m\033[0m"
-echo -e " \E[0;41;36m                SYSTEM STATUS               \E[0m"
+echo -e " \E[0;36m                SYSTEM STATUS               \E[0m"
 echo -e "\e[36m\033[0m"
 echo ""
 status="$(systemctl show cron.service --no-page)"

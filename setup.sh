@@ -1,10 +1,4 @@
 #!/bin/bash
-# =========================================
-# Multiport Fallback By cutepookie
-# Version    : V1.0 Multiport Fallback
-# Script By  : cutepookie
-# (C) Copyright 2022 By cutepookie
-# =========================================
 clear
 #Color
 RED="\033[31m"
@@ -91,7 +85,7 @@ clear
 # Install dig/dnsutils
 sudo apt-get install dnsutils -y
 
-# set time GMT +8 Jakarta
+# set time GMT +7 Jakarta
 ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 
@@ -735,7 +729,6 @@ cat > /etc/rc.local <<-END
 exit 0
 END
 
-# Ubah izin akses
 chmod +x /etc/rc.local
 
 # enable rc local
@@ -802,7 +795,7 @@ wget -O /usr/bin/restart "${api_url}/OTHERS/restart.sh" && chmod +x /usr/bin/res
 wget -O /usr/bin/status "${api_url}/OTHERS/status.sh" && chmod +x /usr/bin/status
 wget -O /usr/bin/cleaner "${api_url}/OTHERS/logcleaner.sh" && chmod +x /usr/bin/cleaner
 wget -O /usr/bin/xp "${api_url}/OTHERS/xp.sh" && chmod +x /usr/bin/xp
-wget -O /usr/bin/nf "https://gist.githubusercontent.com/linulinu/e4df2a6ca3959271270a5dcc8a61b363/raw/0c812dd502d43fe263253d27eccc28fb447f3cc1/check.sh" && chmod +x /usr/bin/nf
+wget -O /usr/bin/nf "https://gist.githubusercontent.com/linulinu/e4df2a6ca3959271270a5dcc8a61b363/raw/0c812dd502d43fe263253d27eccc28fb447f3cc1/check.sh" && chmod +x /usr/bin/nf && chmod +x /usr/bin/nf
 
 # Installing RAM & CPU Monitor
 curl https://raw.githubusercontent.com/xxxserxxx/gotop/master/scripts/download.sh | bash && chmod +x gotop && sudo mv gotop /usr/local/bin/

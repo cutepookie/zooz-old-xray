@@ -47,7 +47,7 @@ sts="${Error}"
 fi
 clear
 echo -e "\e[36m\033[0m"
-echo -e " \E[0;41;36m            LIMIT BANDWITH SPEED            \E[0m"
+echo -e " \E[0;36m            LIMIT BANDWITH SPEED            \E[0m"
 echo -e "\e[36m\033[0m
 \033[1;37mLimit Bandwith Speed By cutepookie\033[0m
 \033[1;37mTelegram :  / @cutepookie\033[0m"

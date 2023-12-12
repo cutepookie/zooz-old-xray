@@ -5,7 +5,7 @@ MYIP=$(wget -qO- ipv4.icanhazip.com);
 NUMBER_OF_CLIENTS=$(grep -c -E "^#~& " "/usr/local/etc/xray/config.json")
         if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
                 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-                echo -e "\\E[0;41;36m    Check XRAY Vmess WS Config     \E[0m"
+                echo -e "\\E[0;36m    Check XRAY Vmess WS Config     \E[0m"
                 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 echo "You have no existing clients!"
@@ -14,7 +14,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^#~& " "/usr/local/etc/xray/config.json")
         fi
 
         echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-        echo -e "\\E[0;41;36m    Check XRAY Vmess WS Config     \E[0m"
+        echo -e "\\E[0;36m    Check XRAY Vmess WS Config     \E[0m"
         echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
         echo " Select the existing client to view the config"
         echo " Press CTRL+C to return"
