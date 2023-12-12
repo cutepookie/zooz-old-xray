@@ -1,5 +1,4 @@
 #!/bin/bash
-clear
 #Color
 RED="\033[31m"
 export NC='\e[0m'
@@ -16,14 +15,22 @@ if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
 		exit 1
 fi
+
 if [ "$(systemd-detect-virt)" == "openvz" ]; then
 		echo "OpenVZ is not supported"
 		exit 1
 fi
 
+if [[ $(grep -w "ID" /etc/os-release | awk -F'=' '{print $2}') -ne "debian" ]] || [[ $(grep -w "ID" /etc/os-release | awk -F'=' '{print $2}') -ne "ubuntu" ]]; then
+          clear
+          echo -e ${RB}" Your OS is not supported. Please use Debian/Ubuntu"${NC}
+          echo ""
+          exit 1
+fi
+
 echo -e ""
 echo -e "\e[94m              .-----------------------------------------------.    "
-echo -e "\e[94m              |          Installing Autoscript Begin          |    "
+echo -e "\e[94m              |            Installing files Begin             |    "
 echo -e "\e[94m              '-----------------------------------------------'    "
 echo -e "\e[0m"
 echo ""
